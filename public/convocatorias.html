@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asistente de Convocatorias - Mawi</title>
+    <meta name="description" content="Asistente de Convocatorias" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mawi-app-container with-sidebar-toggle">
+      <header class="mawi-header">
+        <div class="sidebar-toggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        
+        <div class="logo">
+          <img src="eye-icon.svg" alt="Mawi" class="eye-icon" />
+          <h2>Mawi</h2>
+        </div>
+        
+        <div class="user-menu">
+          <span>Usuario</span>
+          <div class="avatar-circle">
+            <img src="avatar-placeholder.svg" alt="Usuario" />
+          </div>
+        </div>
+      </header>
+
+      <!-- Sidebar colapsable -->
+      <aside class="sidebar collapsed" id="sidebar">
+        <nav class="sidebar-nav">
+          <a href="dashboard.html" class="sidebar-item">Inicio</a>
+          <a href="biomo.html" class="sidebar-item">Asistente de Mi Biomo</a>
+          <a href="explorador.html" class="sidebar-item">Asistente Explorador de Anteproyectos</a>
+          <a href="convocatorias.html" class="sidebar-item active">Asistente de Convocatorias</a>
+        </nav>
+        <div class="sidebar-footer">
+          <a href="#" class="support-link">
+            <img src="support-icon.svg" alt="Soporte" />
+            Contacta con el soporte
+          </a>
+        </div>
+      </aside>
+
+      <div class="app-content">
+        <main class="main-content full-width">
+          <div class="biomo-header">
+            <h1>Asistente de Convocatorias</h1>
+          </div>
+
+          <div class="convocatorias-form">
+            <div class="form-group">
+              <label for="convocatoria-name">Nombre de la convocatoria</label>
+              <input 
+                type="text" 
+                id="convocatoria-name"
+                class="form-input" 
+                placeholder="¿Cómo vas a llamar a tu propuesta?"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="fecha-cierre">Fecha de cierre</label>
+              <input 
+                type="date" 
+                id="fecha-cierre"
+                class="form-input" 
+                placeholder="DD/MM/YYYY"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="sitio-web">Sitio web</label>
+              <input 
+                type="url" 
+                id="sitio-web"
+                class="form-input" 
+                placeholder="Inserta la URL"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="region">Región</label>
+              <input 
+                type="text" 
+                id="region"
+                class="form-input" 
+                placeholder="¿En qué región se organiza el proyecto?"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="organizacion">Organización</label>
+              <input 
+                type="text" 
+                id="organizacion"
+                class="form-input" 
+                placeholder="Inserta el nombre de la organización"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="pais">País o Zona Geográfica</label>
+              <input 
+                type="text" 
+                id="pais"
+                class="form-input" 
+                placeholder="¿Para qué lugar se plantea el proyecto?"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="descripcion">Descripción</label>
+              <textarea
+                id="descripcion"
+                class="form-input" 
+                placeholder="Descripción de qué va a ser el proyecto"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="action-buttons">
+              <button class="action-button">
+                <span>Siguiente</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 18l6-6-6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              
+              <button class="action-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5V19M5 12H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Subir Datos
+              </button>
+            </div>
+            
+            <p class="helper-text">En base a esta información te puedo ayudar a desarrollar tu proyecto.</p>
+          </div>
+
+          <div class="chat-container">
+            <div class="chat-input-container">
+              <input 
+                type="text" 
+                class="chat-input" 
+                placeholder="Escribe..." 
+              />
+              <button class="send-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      // Script simple para controlar la visualización del sidebar
+      document.addEventListener('DOMContentLoaded', function() {
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+        
+        sidebarToggle.addEventListener('click', function() {
+          sidebar.classList.toggle('collapsed');
+        });
+      });
+    </script>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión - Mawi</title>
+    <meta name="description" content="Iniciar sesión en Mawi" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mawi-auth-container">
+      <div class="mawi-auth-card">
+        <h1>Iniciar sesión</h1>
+        <p class="link-text">
+          <a href="signup.html" class="mawi-link">¿Crear cuenta?</a>
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Escribe tu correo"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Escribe tu contraseña"
+              required
+            />
+            <div class="forgot-password">
+              <a href="recover-password.html" class="mawi-link">¿Has olvidado tu contraseña?</a>
+            </div>
+          </div>
+
+          <button type="submit" class="mawi-button">
+            Iniciar sesión
+          </button>
+        </form>
+
+        <div class="help-text">
+          <p>
+            ¿Necesitas ayuda? <a href="#" class="mawi-link">Contacta con nosotros</a>
+          </p>
+        </div>
+        
+        <div class="nav-link">
+          <a href="index.html" class="mawi-link">Volver al inicio</a>
+        </div>
+      </div>
+    </div>
+    <!-- Keep the GPT Engineer script tag -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>

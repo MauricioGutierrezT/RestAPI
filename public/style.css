@@ -1,0 +1,770 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #212121;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Authentication container */
+.mawi-auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Authentication card */
+.mawi-auth-card {
+  background-color: #3d3d3d;
+  border-radius: 8px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  color: #cccccc;
+  margin-bottom: 24px;
+}
+
+/* Buttons */
+.mawi-button {
+  background-color: #30a046;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.mawi-button:hover {
+  background-color: #278c3b;
+}
+
+/* Button with icon */
+.mawi-button.with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mawi-button .icon {
+  margin-left: 8px;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Link text */
+.link-text {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Form labels */
+label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+/* Form inputs */
+input, textarea {
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(48, 160, 70, 0.5);
+}
+
+/* Form utilities */
+.forgot-password {
+  text-align: right;
+}
+
+/* Links */
+.mawi-link {
+  color: #30a046;
+  text-decoration: none;
+}
+
+.mawi-link:hover {
+  text-decoration: underline;
+}
+
+/* Help text */
+.help-text {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.875rem;
+  color: #cccccc;
+}
+
+/* Welcome page specific */
+.mawi-auth-card.welcome {
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.welcome p {
+  color: #cccccc;
+  margin-bottom: 24px;
+}
+
+/* Navigation links */
+.nav-link {
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* Message card for simple messages */
+.message-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.message-card h1 {
+  margin-bottom: 24px;
+}
+
+.message-card .mawi-button {
+  margin-top: 24px;
+  max-width: 200px;
+}
+
+/* Profile image */
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 32px;
+}
+
+.profile-image-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.plus-icon {
+  font-size: 48px;
+  color: #888;
+}
+
+/* Dashboard Styles */
+.mawi-app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.mawi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eye-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.logo h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #444;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Service Cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.service-card {
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  padding: 24px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.icon-container {
+  background-color: #222;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Support Button */
+.support-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.support-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid #444;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.support-button:hover {
+  background-color: #333;
+}
+
+.support-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Biomo Assistant Page Styles */
+.app-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #1a1a1a;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #333;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 0;
+}
+
+.sidebar-nav {
+  padding: 16px 0;
+}
+
+.sidebar-item {
+  display: block;
+  padding: 12px 24px;
+  color: #ccc;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.sidebar-item:hover {
+  background-color: #333;
+}
+
+.sidebar-item.active {
+  background-color: #30a046;
+  color: white;
+}
+
+.sidebar-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #333;
+}
+
+.support-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.support-link img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.full-width {
+  margin-left: 0;
+}
+
+/* Back Button */
+.back-button {
+  margin-bottom: 16px;
+}
+
+.back-button a {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* Biomo Header */
+.biomo-header {
+  margin-bottom: 24px;
+}
+
+.biomo-header h1 {
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 1.5rem;
+}
+
+.biomo-id {
+  color: #ccc;
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+}
+
+.biomo-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #30a046;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.action-button:hover {
+  background-color: #278c3b;
+}
+
+/* Chat container */
+.chat-container {
+  background-color: #333;
+  border-radius: 8px;
+  height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.bot-message {
+  background-color: #444;
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+.user-message {
+  background-color: #30a046;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.message p {
+  margin: 0 0 8px;
+}
+
+.message p:last-child {
+  margin: 0;
+}
+
+.chat-input-container {
+  display: flex;
+  padding: 16px;
+  border-top: 1px solid #444;
+}
+
+.chat-input {
+  flex: 1;
+  background-color: #444;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: white;
+}
+
+.chat-input:focus {
+  outline: none;
+}
+
+.send-button {
+  background-color: #30a046;
+  border: none;
+  border-radius: 8px;
+  width: 42px;
+  height: 42px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.send-button:hover {
+  background-color: #278c3b;
+}
+
+/* Sidebar toggle */
+.with-sidebar-toggle .mawi-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 16px;
+}
+
+.sidebar-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* SVG icons */
+svg {
+  fill: currentColor;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  .chat-messages {
+    height: calc(100vh - 280px);
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .project-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .project-action {
+    margin-left: 0;
+    margin-top: 16px;
+    align-self: flex-end;
+  }
+}
+
+/* Convocatorias Form Styles */
+.convocatorias-form {
+  margin-bottom: 24px;
+}
+
+.form-input {
+  background-color: #444;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(48, 160, 70, 0.5);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.helper-text {
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #333;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Explorador de Anteproyectos Styles */
+.explorador-tabs {
+  margin-bottom: 24px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #444;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tab-btn.active {
+  color: white;
+  border-bottom: 2px solid #30a046;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.project-card {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-title {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+}
+
+.project-description {
+  color: #ccc;
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+}
+
+.project-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.date-label {
+  color: #888;
+}
+
+.project-action {
+  margin-left: 16px;
+}
+
+.circle-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #222;
+  border: 1px solid #30a046;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.circle-btn:hover {
+  background-color: rgba(48, 160, 70, 0.1);
+}
+
+.create-project {
+  display: flex;
+  justify-content: flex-end;
+  margin: 24px 0;
+}
+
+/* Perfil Form Styles */
+.perfil-form {
+  max-width: 600px;
+}

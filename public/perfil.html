@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Perfil - Mawi</title>
+    <meta name="description" content="Mi Perfil en Mawi" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mawi-app-container with-sidebar-toggle">
+      <header class="mawi-header">
+        <div class="sidebar-toggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        
+        <div class="logo">
+          <img src="eye-icon.svg" alt="Mawi" class="eye-icon" />
+          <h2>Mawi</h2>
+        </div>
+        
+        <div class="user-menu">
+          <span>Usuario</span>
+          <div class="avatar-circle">
+            <img src="avatar-placeholder.svg" alt="Usuario" />
+          </div>
+        </div>
+      </header>
+
+      <!-- Sidebar colapsable -->
+      <aside class="sidebar collapsed" id="sidebar">
+        <nav class="sidebar-nav">
+          <a href="dashboard.html" class="sidebar-item">Inicio</a>
+          <a href="biomo.html" class="sidebar-item">Asistente de Mi Biomo</a>
+          <a href="explorador.html" class="sidebar-item">Asistente Explorador de Anteproyectos</a>
+          <a href="convocatorias.html" class="sidebar-item">Asistente de Convocatorias</a>
+          <a href="perfil.html" class="sidebar-item active">Mi Perfil</a>
+        </nav>
+        <div class="sidebar-footer">
+          <a href="#" class="support-link">
+            <img src="support-icon.svg" alt="Soporte" />
+            Contacta con el soporte
+          </a>
+        </div>
+      </aside>
+
+      <div class="app-content">
+        <main class="main-content full-width">
+          <div class="biomo-header">
+            <h1>Mi Perfil</h1>
+          </div>
+
+          <div class="perfil-form">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input 
+                type="text" 
+                id="nombre"
+                class="form-input" 
+                placeholder="Escribe tu nombre"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="apellidos">Apellidos</label>
+              <input 
+                type="text" 
+                id="apellidos"
+                class="form-input" 
+                placeholder="Escribe tus apellidos"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="contrasena">Contraseña</label>
+              <input 
+                type="password" 
+                id="contrasena"
+                class="form-input" 
+                placeholder="Escribe una contraseña"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="org-nombre">Nombre de la organización</label>
+              <input 
+                type="text" 
+                id="org-nombre"
+                class="form-input" 
+                placeholder="Escribe el nombre de tu organización"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="org-descripcion">Descripción de la organización</label>
+              <textarea
+                id="org-descripcion"
+                class="form-input" 
+                placeholder="Descripción que hace la organización"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="support-container">
+              <a href="#" class="support-button">
+                <img src="support-icon.svg" alt="Soporte" />
+                Contacta con el soporte
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      // Script simple para controlar la visualización del sidebar
+      document.addEventListener('DOMContentLoaded', function() {
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+        
+        sidebarToggle.addEventListener('click', function() {
+          sidebar.classList.toggle('collapsed');
+        });
+      });
+    </script>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>

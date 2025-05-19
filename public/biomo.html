@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asistente de Mi Biomo - Mawi</title>
+    <meta name="description" content="Asistente de Mi Biomo" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mawi-app-container">
+      <header class="mawi-header">
+        <div class="logo">
+          <img src="eye-icon.svg" alt="Mawi" class="eye-icon" />
+          <h2>Mawi</h2>
+        </div>
+        <div class="user-menu">
+          <span>Usuario</span>
+          <div class="avatar-circle">
+            <img src="avatar-placeholder.svg" alt="Usuario" />
+          </div>
+        </div>
+      </header>
+
+      <div class="app-content with-sidebar">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <nav class="sidebar-nav">
+            <a href="dashboard.html" class="sidebar-item">Inicio</a>
+            <a href="biomo.html" class="sidebar-item active">Asistente de Mi Biomo</a>
+            <a href="#" class="sidebar-item">Asistente Explorador de Anteproyectos</a>
+            <a href="#" class="sidebar-item">Asistente de Convocatorias</a>
+          </nav>
+          <div class="sidebar-footer">
+            <a href="#" class="support-link">
+              <img src="support-icon.svg" alt="Soporte" />
+              Contacta con el soporte
+            </a>
+          </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+          <div class="back-button">
+            <a href="dashboard.html">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          
+          <div class="biomo-header">
+            <h1>Asistente de Mi Biomo</h1>
+            <p class="biomo-id">Biomo ID: 1234</p>
+            
+            <div class="biomo-actions">
+              <button class="action-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5V19M5 12H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Subir Datos
+              </button>
+              
+              <button class="action-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M14 3H20V9M14 3L9 8M20 9L9 20M9 20H3V14M9 20L4 15M3 14L8 9M8 9L14 3" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Generar PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="chat-container">
+            <div class="chat-messages">
+              <!-- Los mensajes irán aquí -->
+              <div class="message bot-message">
+                <p>Hola, soy tu asistente de Biomo. ¿En qué puedo ayudarte hoy?</p>
+              </div>
+              
+              <div class="message user-message">
+                <p>Necesito información sobre mi Biomo actual.</p>
+              </div>
+              
+              <div class="message bot-message">
+                <p>Claro, tu Biomo ID: 1234 presenta las siguientes características...</p>
+                <p>Puedes subir nuevos datos o generar un PDF con la información actual.</p>
+              </div>
+            </div>
+            
+            <div class="chat-input-container">
+              <input 
+                type="text" 
+                class="chat-input" 
+                placeholder="Escribe..." 
+              />
+              <button class="send-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información de ubicación - Mawi</title>
+    <meta name="description" content="Información de ubicación en Mawi" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mawi-auth-container">
+      <div class="mawi-auth-card">
+        <h1>¿De donde eres?</h1>
+        <p class="subtitle">Completa tu usuario agregando esta información</p>
+
+        <form>
+          <div class="form-group">
+            <label for="country">País</label>
+            <input
+              id="country"
+              type="text"
+              placeholder="Escribe el nombre de tu país"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Número telefónico</label>
+            <input
+              id="phone"
+              type="tel"
+              placeholder="Escribe tu número de teléfono"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="region">Región/Provincia</label>
+            <input
+              id="region"
+              type="text"
+              placeholder="Escribe el nombre de tu región o provincia"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="city">Ciudad</label>
+            <input
+              id="city"
+              type="text"
+              placeholder="Escribe el nombre de tu ciudad"
+              required
+            />
+          </div>
+
+          <button type="submit" class="mawi-button with-icon">
+            Siguiente <span class="icon">→</span>
+          </button>
+        </form>
+
+        <div class="help-text">
+          <p>
+            ¿Necesitas ayuda? <a href="#" class="mawi-link">Contacta con nosotros</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Keep the GPT Engineer script tag -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>
